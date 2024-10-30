@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <img src="images/logo.png" height="60" width="120" alt="NGO Logo">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Donate Section -->
+  <section class="donate">
+    <h2>Support Our Cause</h2>
+    <p>Your donation helps us make a difference. Select an amount to contribute.</p>
+    
+    <!-- Donation Amount Selection -->
+    <label for="donation-amount">Choose an amount:</label>
+    <input type="range" id="donation-amount" min="10" max="1000" step="10" value="50" oninput="updateAmount()">
+    <p id="amount-display">$50</p>
+
+    <!-- Donation Button -->
+    <button onclick="donate()" class="donate-btn">Donate Now</button>
+  </section>
+
+  <footer>
+    <img src="images/Capture3.PNG"  style="margin-top: 70px;" width="100%" alt="">
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
